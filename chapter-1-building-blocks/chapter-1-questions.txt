@@ -1,0 +1,126 @@
+1. Given the following Java, what is the name of the .java file?
+
+public class C{} 
+private class D{} 
+private abstract class E{}
+
+
+2. What happens when the code within the Peroni.java when we attempt to compiled (assuming this is the full class definition?)
+
+public class Peroni { 
+ public static void main(String... peroniIsAmazing) { 
+ Date currentDate = new Date(); 
+ System.out.println("The current date is: " + currentDate); 
+ } 
+}
+
+
+3. Does this class compile?
+
+public class CompilesOrNot { 
+ java.util.Date date; 
+ java.sql.Date sqlDate; 
+}
+
+
+4. What line / letter below contains an instance initialiser block?
+
+A public class Person { 
+B public static final void main(String[] args) { 
+C {System.out.println("Hello");} 
+D } 
+E {System.out.println("There");} 
+F }
+
+
+5. Is this a valid number in Java?
+
+int oneMillion = 1_____000__000;
+
+
+6. Is this a valid number in Java?
+
+int onePointOne = 1_.1;
+
+
+7. What are the valid import statements below?
+
+A import java.*.Date; 
+B import java.util.Date; 
+C import java.*.*;  
+D import java.util.*; 
+
+
+8. List the 8 primitive data types?
+
+
+9. Does the class below compile? If it does what happens when running the class?
+
+public class SomeClass { 
+  
+ int aNumber = 42; 
+ public void SomeClass() { 
+ aNumber = 100; 
+ } 
+  
+ public static void main(String... arguments) { 
+ SomeClass someClass = new SomeClass(); 
+ System.out.println(someClass.aNumber); 
+ } 
+}
+
+
+10. During a call to System.gc(), the garbage collector will instantly garbage collect all eligbile objects. Is this True or False?
+
+11. In the following code, which part of it is considered a constructor?
+Park p = new Park();
+
+
+12. A code block outside a method is known as...?
+
+public class Main { 
+ public Main() { 
+ System.out.println("Statement A"); 
+ } 
+ { 
+ System.out.println("Statement B"); 
+ } 
+}
+
+
+
+13. When an instance of a class is created, the constructor of that class runs first. True or False?
+
+// Class 
+class Car { 
+ // Class member variable 
+ int speed = 50; 
+  
+ // Constructor 
+ public Car() { 
+ // Print statement when constructor is called 
+ System.out.println("Speed of Car: " + speed); 
+ } 
+ // Instance Initialiser Block 
+ { 
+ speed = 60; 
+ System.out.println("hi from instance initialiser block!"); 
+ } 
+ // Class member method 
+ public static void main(String[] args){ 
+ Car obj = new Car(); 
+ System.out.println("hi from main!"); 
+ } 
+}
+
+
+
+14. On what line do the objects "one" and "two" become first eligible for garbage collection, and what does line 4 do?
+
+if (foo) { 
+ String one = new String("a"); 
+ String two = new String("b"); 
+ one = two; 
+ System.gc();  
+} 
+
