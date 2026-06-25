@@ -1,0 +1,129 @@
+1. Java is a Multi Inheritance language. Is this statement true or false?
+
+2. Does the following compile?
+
+public class A {} 
+public final class B extends A () 
+public class C extends B ()
+
+
+
+3. Which of these classes will the compiler insert a default constructor?
+
+A. public class Monday {public Monday(){} } 
+B. public class Tuesday {} 
+C. public class Wednesday {public void Wednesday(){}} 
+D. public class Thursday{private Thursday(){}} 
+E. public class Friday{public Friday(int number){}}
+
+
+
+4. Is this class valid?
+
+public class Turtle { 
+ private String name; 
+ public Turtle() { 
+ name = "John Doe"; 
+ } 
+ public Turtle(int age) {} 
+ public Turtle(long age) {} 
+ public Turtle(String newName, String... favoriteFoods) { 
+ name = newName; 
+ } 
+}
+
+
+
+5. What is wrong with the following Class?
+
+public class Lollipop1 { 
+ public lollipop1() {}  
+ public void Lollipop1() {}  
+} 
+
+A. Nothing is wrong with the Class 
+B. You can't have a number within the Class Name 
+C. The constructor should be Lollipop1() as Java is case sensitive 
+D. The constructor should not have a void return type.
+
+
+
+6. What is the difference between this and this()?
+
+A. this, refers to an instance of the class, while the second, this(), refers to a constructor call within the  class 
+B. this, refers to a constructor call within the class, while the second, this(), refers to an instance of the  class
+
+
+
+7. What happens when we compile this class in Java 17?
+
+public class Bristol { 
+ boolean hasBar; 
+ int numberBuildings; 
+ public Bristol(boolean hasBar, int numberBuildings) { 
+ this.hasBar = hasBar; 
+ this.numberBuildings = numberBuildings; 
+ } 
+  
+ public Bristol() { 
+ boolean hasBar = false; 
+ numberBuildings = 5; 
+ this(hasBar, numberBuildings); 
+ } 
+}
+
+
+
+8. What are the valid rules for a Constructor in Java?
+
+A. A class can contain many overloaded constructors, provided the signature for each is distinct. B. It is required to code a constructor in the class, otherwise it will not compile. 
+C. The compiler inserts a default no-argument constructor if no constructors are declared. D. If a constructor calls this(), then it must be the first line of the constructor. 
+E. A constructor must have the access modifier of public. 
+F. Java does not allow cyclic constructor calls.
+
+
+
+9. In Java what is the top level class that all Classes inherit from?
+
+A. java.util.Object  
+B. java.sql.Object 
+C. java.lang.Object 
+D. java.system.Object
+
+
+
+10. Which of these class definitions are valid?
+
+A. 
+
+// Water.java 
+class Earth {} 
+class Water {} 
+class Fire {} 
+
+B. 
+// Air.java 
+protected class Air{}  
+
+C.  
+// Sea.java 
+private class Sea {} 
+
+D. 
+
+// Waves.java 
+public class Waves{} 
+
+E.  
+
+// Spray.java 
+public class spray{}
+
+
+11. When does the Compiler insert a Default Constructor?
+
+A. When the Developers does not specify a no args constructor. 
+B. When the class implements an Interface. 
+C. When the class extends another Class. 
+D. When no constructors are defined
+

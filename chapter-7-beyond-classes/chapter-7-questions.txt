@@ -1,0 +1,189 @@
+1. Which of the following statements are true?
+
+A. A class can extend multiple other classes
+B. A class can implement only one Interface
+C. A class can implement multiple Interfaces
+D. A class can extend only one other class
+E. An Interface cannot be instantiated
+F. An Interface can be declared as final
+G. An Interface can extend multiple other interfaces.
+
+2. Does the following below compile or not?
+
+public Interface Beer {
+public boolean drinkBeer();
+}
+
+public Interface Peroni extends Beer {
+public abstract int peroniCost();
+public String peroniDescription();
+}
+
+public class MyClass implements Peroni {
+public boolean drinkBeer() return true;
+public intPeroniCost() return 5;
+public String peroniDescription() return "Hello";
+}
+
+3. Does the following compile? If not why not
+
+public interface Animal {}
+public class Fox extends Animal {}
+
+4. Given the following code, what level of access is the method getCity?
+
+interface City {
+void getCity();
+}
+
+A. Private
+B. default
+C. Protected
+D. Public
+
+5. What is an implicit modifier?
+
+A. Is a modifier that the compiler will automatically insert if not present in the code.
+B. Is a convention used in Java development relating to interfaces.
+C. There is no such thing in Java.
+D. Is a new modifier introduced in later versions of Java
+
+
+6. What statements are true in respect to default methods?
+
+A. Default methods MUST be overridden by the implementing class.
+B. A Default method provides a default implementation of the method in the interface.
+C. Default methods are useful for backwards compatibility of older code.
+D. A Default method can only be declared in an interface (and not class) and marked as default and it must
+include a method body.
+E. A Default method is implicitly public
+F. A Default method can optionally have a body.
+
+
+7. What happens for the following code?
+
+public interface A {
+default int returnInt() {return 3;}
+}
+
+public interface B {
+default int returnInt() {return 1;}
+}
+
+public class C implements A, B {
+public int returnInt() {return 2;}
+public static void main(String args[]) {
+C c = new C();
+System.out.println(c.returnInt());
+}
+}
+
+A. 1 is displayed
+B. 3 is displayed
+C. Runtime Exception
+D. 2 is displayed
+E. Compile time exception
+
+8. Which of the following are true statements when it comes to static interface methods?
+
+A. A static method must be marked with the static keyword
+B. A static method can be empty.
+C. A static method must include a method body.
+D. A static method without an access modifier is implicitly private
+E. A static method cannot be marked as abstract or final
+F. A static method is not inherited and cannot be accessed in a class implementing the interface without a
+reference to the interface name.
+
+
+9. Which of the following are valid Enum declarations?
+
+A. public enum Planets {MERCURY,VENUS,EARTH,MARS,JUPITER,SATURN,URANUS,NEPTUNE}
+B. public enum Planets {MERCURY,VENUS,EARTH,MARS,JUPITER,SATURN,URANUS,NEPTUNE;}
+C. enum Planets {MERCURY,VENUS,EARTH,MARS,JUPITER,SATURN,URANUS,NEPTUNE}
+D. private enum Planets {MERCURY,VENUS,EARTH,MARS,JUPITER,SATURN,URANUS,NEPTUNE}
+E. private enum Planets {MERCURY,VENUS,EARTH,MARS,JUPITER,SATURN,URANUS,NEPTUNE;}
+
+10. When a Class or Interface may only be extended/implemented by named classes or interface we call this
+
+A. Abstract
+B. Non-Sealed
+C. Sealed
+D. Permits
+
+11. What statements are true about Records
+
+A. Records are designed to remove Boiler Plate code
+B. Records are mutable, that is they contain setter methods
+C. The following members are automatically added to a record: Constructor (with the same arguments as the
+record decleration, accessor method for each field, equals() method using each field, hashCode() method using
+each field, and toString() method using each field.
+D. A Record decleration may be declared without any fields
+
+12. Which class below is best for Encapsulation? A, B, C and explain why.
+
+// Class A
+public class A {
+public int age;
+public String name;
+public A (age, name) {
+this.age = age;
+this.name = name;
+}
+}
+
+// Class B
+public class B {
+private int age;
+private String name;
+public B (age, name) {
+this.age = age;
+this.name = name;
+}
+}
+
+// Class C
+public class C {
+int age;
+String name;
+public C (age, name) {
+this.age = age;
+this.name = name;
+}
+}
+
+13. What are the 4 types of nested class?
+
+14. What is the output of the following?
+
+class Parent {
+String name = "ParentClass";
+}
+class Child extends Parent {
+String name = "ChildClass";
+}
+public class Main {
+public static void main(String[] args) {
+Parent p = new Child();
+System.out.println(p.name);
+}
+}
+A. ParentClass
+B. ChildClass
+C. Compile-time error
+
+15. What is the output of the following?
+
+class Printer {
+void print(Object obj) { System.out.println("Object version"); }
+void print(String str) { System.out.println("String version"); }
+}
+public class Main {
+public static void main(String[] args) {
+Printer p = new Printer();
+p.print("Hello");
+}
+}
+
+A. Object version
+B. String version
+C. Compile-time error due to ambiguity
