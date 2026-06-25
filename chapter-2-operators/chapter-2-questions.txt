@@ -1,0 +1,113 @@
+
+1. What is the final value of?
+
+int result = (3 * 3 * 3 + (3 + 3)) % 2 ;
+
+2. What is the final value of?
+int result = (((3 * 4) + (9 - 1) + (4 % 2));
+
+3. Given the following snippet of code, what happens for A, B, C and D?
+Peroni drinkOne = new Peroni(); 
+Peroni drinkTwo = new Peroni(); 
+Peroni drinkThree = drinkOne; 
+Peroni drinkFour = new Peroni(); 
+drinkFour = drinkThree; 
+
+
+A. System.out.println(drinkOne == drinkOne && drinkTwo == drinkThree || drinkOne == drinkFour);  B. System.out.println(drinkFour == drinkOne || drinkOne == drinkTwo); 
+C. System.out.println(drinkOne != drinkTwo && drinkThree == drinkFour || (drinkThree !=drinkOne && drinkOne !=  drinkOne)); 
+D. drinkOne = drinkTwo; 
+ drinkTwo = drinkTwo; 
+ drinkTwo = drinkOne; 
+ System.out.println(drinkOne != drinkTwo); 
+
+4. What is the difference between || and |. What is the difference between && and &?
+
+What is the difference between || and |. What is the difference between && and &?
+
+
+
+5. For A, B, C and D what boolean value results in the following?
+
+A. true ^ true 
+B. false & true 
+C. false || true || false || false || false || false || false || false || false || false || false || false ||  false || false || false 
+D. true && true || (false || true)
+
+
+
+6. What is the value of the variable beersThisEvening?
+
+int beersThisEvening = 10; 
+boolean bool = beersThisEvening <= 11 || ++beersThisEvening >=11; 
+System.out.println(beersThisEvening);
+
+
+
+7. What is the values of v, x, y, and z?
+
+int v = 7; 
+int x = 3; 
+int y = 10; 
+int z = v > 2 ? ++x: y++; 
+y = x++; 
+y = ++v; 
+System.out.println(v + "," + x + "," + y + "," + z);
+
+
+A. 7,5,7,3 
+B. 8,5,8,4 
+C. 8,5,8,2 
+D. Code Does Not compile 
+E. Null Pointer Exception 
+F. 7,5,7,9 
+G. 8,6,8,4 
+H. 8,2,8,2
+
+
+8. Which of the following statements successfully compile?
+
+A. long veryLongNumber = 123_123____124124124124; 
+B. long veryLongNumber = 35_33_35353_335_4333L; 
+C. long veryLongNumber = (long) 243245454235; 
+D. long veryLongNumber = (long) 35_33_35353_335_4333l; 
+E. int shorterNumber = (int) ((long)2342342342343L);
+
+
+9. Seperate the following into unary, binary and ternary operators
+
++ 
+?: 
+-- 
+&& 
+(int) 
+% 
+| 
+++ 
+^
+
+
+
+10. What is the difference between OR (|)and XOR (^) for the following statement
+
+Statement: At the bar the barman offers a Peroni OR a Moretti (Peroni | Moretti) 
+Statement: At the bar the barman offers a Peroni XOR a Moretti (Peroni ^ Moretti)
+
+
+
+11. What is the output of the following, if beanTin is null?
+
+if(beanTin != null & beanTin.getAmount() > 100) { 
+ System.out.println("Big tin of beans!"); 
+} else { 
+ System.out.println("No beans!"); 
+}
+
+
+
+12. After this code is run, what are the values of: val, preIncVal, postIncVal? 
+
+int val = 12; 
+int preIncVal = ++val; 
+int postIncVal = val++; 
+

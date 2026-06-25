@@ -1,0 +1,247 @@
+1. What is displayed after the following executes?
+
+int two = 3;
+final int five = 4;
+final String six = "5";
+System.out.println(1 + two
++ five + "1" + six);
+A. 816
+B. 1716
+C. 815
+D. 817
+E. 14
+F. 715
+
+2. What is displayed after the following executes?
+
+int two = 3;
+final int five = 4;
+final String six = "5";
+final String seven = "9";
+five = 5;
+System.out.println(1 + 2 + 3 + "five" + five + seven);
+A. Runtime Exception
+B. Compile time exception
+C. 6five49
+D. 6549
+E. 6547
+F. 6five49
+
+3. What is the value of result after execution?
+
+int a = 1;
+int b = 2;
+String peroni = "Peroni";
+int pos1 = peroni.indexOf("er");
+int pos2 = peroni.indexOf("in");
+int result = a - pos2 * b + pos1;
+A. 1
+B. 2
+C. 3
+D. 4
+E. 5
+F. Runtime Exception
+G. Compile time Exception
+H. -1
+I. -2
+
+4. What is the value of the variable result after the following code is executed?
+
+String result = " Result ";
+result.toUpperCase().toLowerCase().toLowerCase().stripTrailing().toUpperCase().replace("E","e");
+System.out.println(result);
+A. " RESULT"
+B. " Result "
+C. "RESULT "
+D. "rEsult "
+E. " rEsult "
+F. "ReSULT "
+G. Null Pointer Exception
+
+5. What is the evaluation of the below snippet of code?
+
+var colourOne = "Red";
+var colourTwo = new StringBuilder("Re");
+colourTwo.append("d");
+System.out.println(colourOne != colourTwo);
+A. Compile time exception
+B. Runtime exception
+C. true
+D. "true"
+E. false
+F "false"
+
+6. What is displayed when the following code is run?
+
+public class Main {
+public static void main(String[] args) {
+String animal = "kangaroo";
+System.out.println(animal.charAt(animal.length()));
+}
+}
+
+7. What is displayed when the following is executed?
+
+public class Main {
+public static void main(String[] args) {
+String city = "Bristol";
+System.out.println(city.substring(1,1).length() + city.substring(0,4).length() + city.indexOf("ris",0) +
+city.indexOf("ol", 6) + city.indexOf("o"));
+}
+}
+A. 5
+B. 6
+C. 7
+D. 8
+E. 9
+F. 10
+G. Compilation Error
+H. Runtime Exception
+
+8. What is displayed?
+
+String string1 = new String("Apple");
+String string2 = new String("Apple");
+if(string1.equalsIgnoreCase(string2)) {
+var s1 = string1.intern();
+if(s1 == string2) {
+System.out.print("1");
+} else {
+var s2 = string2.intern();
+if(s1 == s2) {
+System.out.print("2");
+} else {
+System.out.print("3");
+}
+}
+} else {
+System.out.println("4");
+}
+
+A. 1
+B. 2
+C. 3
+D. 4
+E. Null Pointer Exception
+F. Compile time exception.
+
+9. Which of these Array declarations are valid?
+
+A. []int one;
+B. int two[];
+C. three int[];
+D. int [] four;
+E. int five[];
+F. int[] six[];
+G. int[] seven;
+
+10. What are the results of the following?
+
+var first = Math.min(4,-2);
+var second = Math.max(1314, 402);
+var third = Math.round(3.51);
+var fourth = Math.round(2.1);
+var fifth = Math.floor(3.9);
+var sixth = Math.floor(6.0);
+var seventh = Math.ceiling(1.1);
+var eight = Math.random(); // what is the range of values that eight could be?
+
+11. What import statement(s) below are required to get the code below to compile and run?
+
+import ?????????
+public static void main(String args[]) {
+System.out.println(LocalDate.now());
+System.out.println(LocalTime.now());
+System.out.println(LocalDateTime.now());
+System.out.println(ZonedDateTime.now());
+}
+
+A. import java.util.*;
+B. import java.util.Date;
+C. import java.time.*;
+D. import java.sql.Date;
+
+12. Match the following classes to the descriptions below.
+
+1. LocalDate
+2. LocalTime
+3. ZonedDateTime.
+4. LocalDateTime.
+A. Contains both a date and time but no time zone
+B. Contains a date, time, and time zone.
+C. Contains just a date—no time and no time zone
+D. Contains just a time—no date and no time zone
+
+13. Which of the following correctly creates an object of LocalDate?
+
+A. var localDateOne = new LocalDate(2025,10,12);
+B. var localDateTwo = LocalDate.of(2025,9,23);
+C. var localDateThree = new LocalDate(2022,Month.JULY, 18);
+D. var localDateFour = LocalDate.of(2025,0,1);
+E. var localDateFive = LocalDate.of(2025, Month.June, 4);
+
+14. The LocalDate, LocalTime, LocalDateTime and ZonedDateTime are all immutable. True or false?
+
+15. What is the new date displayed?
+
+var localDate = LocalDate.of(2025, Month.JUNE,10);
+localDate = localDate.plusDays(10);
+localDate.plusMonths(3);
+System.out.println(localDate);
+
+A. 10 June 2025
+B. 20 June 2025
+C. 10 July 2025
+D. 20 July 2025
+E. 10 September 2025
+F. 20 September 2025
+
+16. What is the new date displayed?
+
+var localDate = LocalDate.of(2025, Month.JULY, 1);
+localDate = localDate.plusHours(48);
+localDate = localDate.minusHours(24);
+System.out.println(localDate);
+
+A. Compilation Exception
+B. Runtime Exception
+C. 1 July 2025
+D. 2 July 2025
+E. 3 July 2025
+
+17. What is the output from the following statement when creating a Period object?
+System.out.println(Period.of(2,0,11));
+
+A. 2Y0M11D
+B. 2Y11D
+C. P2Y0M11D
+D. P2Y11D
+E. PY2M0D11
+F. PY2D11
+
+18. Which line generates a Compile time Exception and why?
+
+1: import java.time.*;
+2:
+3: var time = LocalTime.of(15,30);
+4: var date = LocalDate.of(2025, 10, 21);
+5: var dateTime = LocalDateTime.of(date, time);
+6: var period = Period.ofDays(20);
+7: System.out.println(date.plus(period));
+8: System.out.println(time.plus(period));
+9: System.out.println(dateTime.plus(period));
+
+A. Line 2
+B. Line 3
+C. Line 4
+D. Line 7
+E. Line 8
+F. Line 9
+
+19. What does System.out.println(Period.ofWeeks(2)) produce?
+
+A. P14D
+B. PT14D
+C. 14D
+D. P2W
+E PT2W

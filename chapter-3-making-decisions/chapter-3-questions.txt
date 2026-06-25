@@ -1,0 +1,180 @@
+1. After the following code has executed what are the values of a, b, and c?
+
+int a = 4; 
+int b = 5; 
+int c = 0; 
+if (10 == 10) 
+ ++a; ++b; c++; 
+if (10 != 10) 
+ a++; b++; ++c; 
+System.out.println(a + "," + b + "," + c); 
+
+
+
+2. What happens for the following code?
+
+int numberToTest = 1; 
+if (numberToTest = 1) { 
+ numberToTest++; ++numberToTest; 
+} else if (numberToTest != 1) { 
+ numberToTest--; --numberToTest; 
+} 
+
+A. Runtime exception 
+B. Compile time exception 
+C: numberToTest has the value 3 
+D: numberToTest has the value 2 
+E: numberToTest has the value -1 
+F: numberToTest has the value -2 
+G: None of the above
+
+
+
+3. Which of the following is a pattern variable?
+
+String apple = "apple"; 
+if(apple instanceof String banana) { 
+ final String cherry = "cherry";  
+ System.out.println(apple + " , " + banana + " , " + cherry); 
+}
+
+
+
+4. What is the value of the variable result after the following code is executed?
+
+final String result = " Result "; 
+result.toUpperCase().toLowerCase().toLowerCase().stripTrailing().toUpperCase().replace("E","e"); System.out.println(result);
+ 
+A. " RESULT" 
+B. " Result " 
+C. "RESULT " 
+D. "rEsult " 
+E. " rEsult " 
+F. "ReSULT " 
+G. Null Pointer Exception
+
+
+
+5. What happens when the following snippet of code is run?
+
+int dayOfWeek = 4; 
+switch(dayOfWeek) {} 
+switch(dayOfWeek) { 
+ case 1,7: System.out.println("Weekend"); break; 
+ case 2,3,4,5,6: System.out.println("Weekday"); break; 
+ default: System.out.println("Other"); break; 
+} 
+
+A. Runtime Exception 
+B. Compile time Exception 
+C. "Weekend" is displayed 
+D. "Weekday" is displayed 
+E. "Other" is displayed
+
+
+
+6. What happens when the following snippet of code is run?
+
+int monthOfYear = 7; 
+switch(monthOfYear) { 
+ case 1,2,3: System.out.print("A"); break; 
+ case 7: System.out.print("B"); 
+ case 4,5: System.out.print("C"); 
+ case 6: System.out.print("D"); break; 
+ default: System.out.print("E"); 
+ case 8,9,10,11,12: System.out.print("F"); 
+} 
+
+A. ABCDEF 
+B. ABCDE 
+C. ABCD 
+D. A 
+E. ABC 
+F. BCD 
+G. BCDE 
+H. BCDEF
+
+
+
+7. Which of the following data types are supported by Switch Statements?
+
+A. double 
+B. Float 
+C. String 
+D. enum 
+E. int 
+F. Double 
+G. char 
+H. Object
+
+
+
+8. What is the result of running the following loop?
+
+int counter = 0; 
+counter++; 
+System.out.print("*"); 
+while (++counter <= 3) { 
+ System.out.print("*"); 
+} 
+System.out.print("**"); 
+
+A. * 
+B. ** 
+C. *** 
+D. **** 
+E. ***** 
+F. ******
+
+
+
+9. What is the difference between a while loop and a do while loop?
+
+A. A while loop always guarantees at least one iteration of the loop will run. 
+B. A do/while loop always guarantees at least one iteration of the loop will run.
+
+
+
+10. What is the result of the following switch expression?
+
+final int dayOfWeek = 5; 
+  
+var printTypeOfDay = switch(dayOfWeek) { 
+case 0 -> "Weekend"; 
+case 1,2,3,4,5 -> "Weekday"; 
+case 6 -> "Weekend"; 
+default -> "Invalid Day of Week"; 
+} 
+System.out.println(printTypeOfDay); 
+
+A. Run time exception 
+B. Compile time exception  
+C. "Weekend" 
+D. "Weekday" 
+E. "Invalid Day of Week" 
+F. Null Pointer Exception
+
+
+
+11. What is the result of this swich expression?
+
+int cube = 3; 
+var result = switch(cube) { 
+ case 0 -> { yield 0;} 
+ case 1 -> 1; 
+ case 2 -> 8; 
+ case 3 ->{yield 27;} 
+ case 4 -> { 
+ yield 64; 
+ } 
+}; 
+
+A. 0 
+B. 1 
+C. 8 
+D. 27 
+E. 64 
+F. Compilation Error
+
+
+

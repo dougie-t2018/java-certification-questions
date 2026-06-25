@@ -1,0 +1,132 @@
+1. What are the 4 access modifiers?
+
+2. Match the access modifiers (Letters) to the description (Numbers)
+
+A. default / package
+B. private
+C. public
+D. protected
+
+1. The method can be called only from a class in the same package
+2. The method can be called only from within the same class
+3. The method can be called from anywhere
+4. The method can be called only from a class in the same package or a subclass
+
+3. Does this code compile?
+
+public final String void1(String string) {
+return string;
+}
+
+4. Which of these are valid method declarations?
+
+A. default void buyPeroni1(){}
+B. void buyPeroni2(){}
+C. private String buyPeroni3(){return "";}
+D. protected int buyPeroni4(){ return 1;}
+E. long public buyPeroni5(){return 1L;}
+F. public void final buyPeroni6(){}
+G. public String void buyPeroni7(){return "";}
+
+
+5. What are the rules for creating a method with var args?
+
+A. A method can have at most one var-args parameter.
+B. A method can have any number of var-args parameters.
+C. If a method contains a varargs parameter, it must be the last parameter in the list.
+D. A method must contain a var-args parameter
+E. Using var-args parameter is optional
+
+6. Which of the following method definitions are correct?
+
+public class VisitAttractions {
+public void run1(int... steps) {} // A.
+public void run2(int start, int... steps) {} // B.
+public void run3(int... steps, int start) {} // C.
+public void run4(int... start, int... steps) {} // D.
+}
+
+7. What are the values displayed when this program is run?
+
+public class CountSteps {
+public static void countSteps(int start, int... steps) {
+System.out.print(steps.length);
+}
+
+public static void main(String[] args) {
+countSteps(10);
+countSteps(15, 2);
+countSteps(20, 2, 3, 10, 30);
+countSteps(100, new int[] {4, 5});
+} }
+
+A. Compile time error
+B. Run time error
+C. 0122
+D. 0132
+E. 0142
+
+8. What is the process called for automatically converting a primitive value to a wrapper class?
+
+A. Boxing
+B. UnBoxing
+C. AutoBoxing
+D. Overloading
+E. Overridding
+
+9. When methods in the same class contain the same name, but different signatures this is called?
+
+A. Inheritence
+B. Method Overriding
+C. Method Overloading
+D. Abstraction
+E. Encapsulation
+
+10. What is the result of the following?
+
+public class Main {
+
+public void aMethod(String a) {
+System.out.print("ABC");
+}
+
+public void aMethod(Object b) {
+System.out.print("123");
+}
+
+public static void main(String[] args) {
+var a = new Main();
+a.aMethod(10);
+System.out.print("-");
+a.aMethod("bob");
+}
+}
+
+A. Runtime Exception
+B. 123-ABC
+C. 123-123
+D. ABC-123
+E. Compile time Exception
+
+11. What is the result of the following?
+
+public class Main {
+public static void main(String[] args) {
+int a = 1;
+System.out.print(a);
+incrementA(a);
+System.out.print(a);
+}
+public static void incrementA(int number){
+System.out.print(number);
+System.out.print(number++);
+}
+}
+
+A. 1121
+B. 1211
+C. 1211
+D. 1221
+E. 1111
+
+12. What is the difference between a Static and Instance Member?
