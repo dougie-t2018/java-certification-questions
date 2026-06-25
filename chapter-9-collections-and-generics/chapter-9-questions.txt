@@ -1,0 +1,309 @@
+1.List the 4 main interfaces in the Collections Framework
+
+2. Match the interface to the description
+
+
+1. Set
+
+2. List
+
+3. Queue
+
+4. Map
+
+ 
+
+A. Collection that maps keys to values, with no duplicate keys allowed. The elements are key/value pairs.
+
+B. Collection that does not allow duplicate entries
+
+C. Collection that is an ordered collection of elements that allows duplicate entries. Elements can be accessed by an int index
+
+D. Collection that orders it's elements in a specific order for processing.
+
+
+3. Specify classes that implement the Set, Map and List interfaces
+
+
+4. Which of the following are valid?
+
+A. List<Integer> list = new ArrayList<Integer>();
+B. List<Integer> listTwo = new ArrayList<>();
+C. List<Integer> listThree = new ArrayList()<>;
+D. List<> listFour = new ArrayList<Integer>();
+E. Set<String> set = new Set<String>();
+F. Map<Object> map = new HashMap<>();
+G. Map<Int, String> mapTwo = new HashMap<>(); 
+ 
+
+5. Given the following code, what are the values of listSize, setSize, addToList, addToSet
+
+import java.util.*;
+ 
+public class Main {
+  public static void main(String[] args) {
+    List<String> list = new ArrayList<>();
+    Set<String> set = new HashSet<>();
+    
+    list.add("Ichnusa"); set.add("Ichnusa");
+    list.add("ICHNUSA"); set.add("ICHNUSA");
+    list.add("Ichnusa"); set.add("Ichnusa");
+    
+    int listSize = list.size();
+    int setSize = set.size();
+    
+    boolean addToList = list.add("Ichnusa");
+    boolean addToSet = set.add("ICHNUSA");
+    
+    System.out.print(listSize + "," + setSize + "," + addToList + "," + addToSet);
+  }
+}
+ 
+
+6. How do you completely clear a collection?
+
+import java.util.*;
+ 
+public class Main {
+  public static void main(String[] args) {
+    List<Integer> list = new ArrayList<>();
+ 
+    
+    list.add(1); 
+    list.add(2);
+    list.add(3); 
+    
+   // Code to clear a collection
+   <Code to clear the list>
+  }
+}
+ 
+A. list.clearAll();
+B. list.clear();
+C. list.remove();
+D. list.removeAll();
+ 
+
+7. Given the folllowing code, what is the value of size?
+
+import java.util.*;
+ 
+public class Main {
+  public static void main(String[] args) {
+    List<String> list = new ArrayList<>();
+    
+    list.add("peroni"); 
+    list.add("peroni");
+    list.add("peroni"); 
+    list.add("peroni"); 
+    list.add("peroni"); 
+    list.removeIf(s -> s.startsWith("P"));
+    
+    list.remove("peroni");
+   
+   if (list.contains("peroni"))
+       list.remove("peroni");
+       list.add("peroni");
+   if (!list.contains("peroni"))
+       list.remove("peroni");
+       list.add("peroni");
+   
+   System.out.println(list.size());
+  }
+}
+ 
+A. 0
+B. 1
+C. 2
+D. 3
+E. 4
+F. 5
+G. 6
+H. Runtime Exception
+ 
+
+8. What is the value of the following?
+
+import java.util.*;
+public class Main {
+ 
+public static void main(String args[]) {
+Queue<Integer> queue = new LinkedList<>();
+queue.add(1);
+queue.add(2);
+queue.add(3);
+queue.add(4);
+ 
+System.out.print(queue.peek());
+System.out.print(queue.peek());
+System.out.print(queue.remove());
+queue.add(5);
+System.out.print(queue.remove());
+System.out.print(queue.peek());
+ }
+}
+ 
+A. 11152
+B. 11123
+C. 11122
+D. 11153
+E. 11152
+F. 11154
+ 
+
+9. What is the result of the following?
+
+import java.util.*;
+public class Main {
+ 
+public static void main(String args[]) {
+Deque<String> deque = new LinkedList<>();
+ deque.add("A");
+ deque.add("B");
+ deque.addFirst("C");
+ deque.addLast("D"); 
+ 
+System.out.print(deque.peek());
+System.out.print(deque.removeLast());
+System.out.print(deque.peekFirst());
+deque.addFirst("E");
+System.out.print(deque.removeFirst());
+System.out.print(deque.removeFirst());
+ }
+}
+ 
+A. CACE
+B. CDCEB
+C. ACCEA
+D. ACDEA
+E. ABCDE
+F. CDCEC
+ 
+
+10. What is the result of the following
+
+import java.util.*;
+public class Main {
+ 
+public static void main(String args[]) {
+Deque<String> stack = new LinkedList<>();
+ stack.push("U");
+ stack.push("T");
+ stack.push("X");
+ stack.push("Y"); 
+ 
+System.out.print(stack.pop());
+stack.pop();
+stack.push("Z");
+System.out.print(stack.pop());
+System.out.print(stack.pop());
+ }
+}
+ 
+A. YZX
+B. UTX
+C. XTU
+D. YZT
+E. YZU
+F. UZU
+G. UZT
+ 
+
+11. What is the value displayed
+
+import java.util.*;
+public class Main {
+ 
+public static void main(String args[]) {
+Map<String, String> map = new TreeMap<>();
+map.put("Cardiff", "Wales");
+map.put("Bristol", "England");
+map.put("Glasgow", "Scotland");
+map.put("Belfast", "Northern Ireland");
+ 
+System.out.print(map.keySet());
+ 
+ }
+}
+ 
+A. Runtime Exception
+B. Cardiff, Bristol, Glasgow, Belfast
+C. Wales, England, Scotland, Northern Ireland
+D. Compile time Exception
+E. Belfast, Bristol, Cardiff, Glasgow
+F. England, Northern Ireland, Scotland, Wales
+G. Null Pointer Exception
+ 
+
+12. What is the value of the following?
+
+import java.util.*;
+public class Main {
+ 
+public static void main(String args[]) {
+Map<String, String> map = new HashMap<>();
+map.put("Cardiff", "Wales");
+map.put("Bristol", "England");
+map.put("Glasgow", "Scotland");
+map.put("Belfast", "Northern Ireland");
+ 
+System.out.print(map.size());
+System.out.print(map.containsKey("Cardiff"));
+System.out.print(map.containsValue("Belfast"));
+map.clear();
+System.out.print(map.size());
+System.out.print(map.isEmpty());
+ 
+ }
+}
+ 
+A. 4 true false 0 true
+B. 4 false true 0 true
+C. 4 false true 0 false
+D. 3 false true 0 true
+E. 3 false true 0 false
+ 
+
+13. Which of the following statements are true?
+ 
+A. Comparable is an interface that a class can implement to define the sort order of an object.
+B. Comparator is an interface that a class can implement to define the sort order of an object.
+C. The Comparable Interface defines one method compareTo(T object) that returns 0 when the current object is equivalent to the object, returns a a negative number when the current object is smaller than the argument, returns a positive number when the current object is larger that the argument.
+D. The Comparable interface lives in the package java.util
+E. The Comparable interface lives in the package java.lang
+ 
+
+14. What happens with the following code?
+ 
+import java.util.*;
+public class Main{
+private String name;
+ 
+public Main(final String name) {
+  this.name = name;
+}
+ 
+public String toString() {
+  return name;
+}
+ 
+public int compareTo(Main p) {
+  return name.compareTo(p.name);
+}
+ 
+public static void main(String args[]) {
+ var list = new ArrayList<Main>();
+ list.add(new Main("Bob"));
+ list.add(new Main("Alice"));
+ list.add(new Main("Charlie"));
+ Collections.sort(list);
+ System.out.println(list);
+}
+ 
+}
+ 
+A. Runtime Exception 
+B. Compile time Exception
+C. [Bob Alice Charlie]
+D. [Alice Bob Charlie]
+E. Null Pointer Exception
