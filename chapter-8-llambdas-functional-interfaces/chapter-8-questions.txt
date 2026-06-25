@@ -1,0 +1,71 @@
+1.Which of the following interface declarations represents a valid functional interface that can be targeted by a lambda expression
+
+ 
+
+A.
+
+interface Alpha {
+    void doSomething();
+    void doSomethingElse();
+}
+
+B.
+
+interface Beta {
+    void process();
+    default void reset() {}
+}
+
+C.
+
+interface Gamma {
+    static void run() {}
+}
+
+D.
+
+interface Delta extends Runnable {
+    void execute();
+}
+
+What statements are true for Functional Interfaces?
+ 
+A. A Functional Interface can have many abstract methods
+B. A Functional Interface must have one, and only one abstract method
+C. A Functional Interface need not have any abstract methods
+D. To be a functional interface you need to use the functional keyword
+ 
+
+Which of the following functional interfaces contain an abstract method that returns a primitive value?
+
+A. StringSupplier
+B. BooleanSupplier
+C. CharSupplier
+D. DoubleSupplier
+E. IntSupplier
+F. FloatSupplier
+
+Which type of method reference is equivalent to the lambda expression (String s) -> s.toLowerCase()?
+
+A. String::toLowerCase (Reference to an instance method of an arbitrary object of a particular type)
+B. String::new (Reference to a constructor)
+C. s::toLowerCase (Reference to an instance method of an existing object)
+D. String::toLowerCaseStatic (Reference to a static method)
+
+Which of the following method signatures are inherited from Object?
+
+A. public int toInteger()
+B. public String toString()
+C. public int hashCode()
+D. public boolean equals(Object)
+
+What does the @FunctionalInterface annotation do when placed above an interface definition?
+ 
+A. It dynamically converts any abstract class into an interface at runtime.
+B. It instructs the compiler to verify that the interface has exactly one abstract method, failing compilation if it does not.
+C. It is mandatory; lambda expressions will fail to compile if they target an interface lacking this annotation.
+D. It automatically implements all methods within the interface using default dummy behaviours.
+ 
+Within the following Llambda Expression identify what parts are the parameter and body
+
+p -> p.buyPeroni()
