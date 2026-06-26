@@ -1,0 +1,71 @@
+1. What does JDBC stand for?
+
+A. Java Database Connectivity
+B. Java Direct Binary Connection
+C. Java Database Binary Connection
+D. Java Direct Byte Connection
+
+2. Identify the Interfaces used in JDBC
+
+A. PreparedStatement
+B. CompiledStatement
+C. Driver
+D. CallableStatement
+E. OracleConnection
+F. MongoConnection
+G. Connection
+H. ResultSet
+
+3. From the options below which SQL statements corresponds to CREATE, READ, UPDATE, DELETE
+
+A. DELETE
+B. SELECT
+C. INSERT
+D. UPDATE
+
+4. Which of the following consitute a valid JDBC URL?
+
+A. oracle:localhost:2501
+B. mongo:localhost:7401
+C. jdbc:neo4j:localhost:6505
+D: jdbc::127.0.0.1
+E: jdbc:oracle:127.0.0.1:8001
+F: jdbc:oracle::192.2.2.2
+G: neo4j:localhost:jdbc
+H: oracle:localhost:jdbc
+
+5. Match the following JDBC Interfaces to their purpose
+
+A. Driver
+B. Connection
+C. PreparedStatement
+D. CallableStatement
+E. ResultSet
+
+1. Sends commands to a Database
+2. Reads the result of a query
+3. Executes a command stored on the Database
+4. Executes an SQL Query
+5. Establishes a Connection to the Database
+
+6. Setting autocommit to false means that the database takes care of transactions. Is this true or false?
+
+7. How many columns are returned in the result set, from the SQL Statement "SELECT id, name, price, description FROM beers"?
+
+A. 0
+B. 1
+C. 2
+D. 3
+E. 4
+F. 5
+
+8. Given the Table definition below, how many columns are returned by the SQL Statement "SELECT * FROM cities"?
+
+Table Definition: id : INTEGER, cityName : VARCHAR2(255), population : INTEGER
+
+A. 0
+B. 1
+C. 2
+D. 3
+E. 4
+F. 5
